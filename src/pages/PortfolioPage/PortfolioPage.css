@@ -7,10 +7,14 @@
 }
 
 .portfolio-section {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--navbar-height));
     width: 100%;
+    scroll-margin-top: var(--navbar-height);
 }
 
-.portfolio-section[id="home-section"] {
-    height: calc(100vh - var(--navbar-height));
+.portfolio-section.light-mode {
+    background: var(--background-light-color);
+}
+.portfolio-section.dark-mode {
+    background: var(--background-dark-color);
 }

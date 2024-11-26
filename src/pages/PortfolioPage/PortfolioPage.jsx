@@ -4,13 +4,13 @@ const PortfolioPage = ({ projects, refs }) => {
     
     return (
         <main className='main'>
-            <section className='portfolio-section' id='home-section' ref={refs.homeSection}>
+            <section className='portfolio-section dark-mode' id='home-section' ref={refs.homeSection}>
 
             </section>
-            <section className='portfolio-section' id='about-section' ref={refs.aboutSection}>
+            <section className='portfolio-section light-mode' id='about-section' ref={refs.aboutSection}>
                 
             </section>
-            <section className='portfolio-section' id='projects-section' ref={refs.projectsSection}>
+            <section className='portfolio-section dark-mode' id='projects-section' ref={refs.projectsSection}>
                 
             </section>
         </main>
