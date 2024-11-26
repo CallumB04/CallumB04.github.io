@@ -90,9 +90,9 @@ const NavbarItem = ({ value, itemRef, onClick }) => {
     const capitalisedValue = value.charAt(0).toUpperCase() + value.slice(1);
 
     return (
-        <a href={`#${value}-section`} className='navbar-item' ref={itemRef} onClick={onClick}>
+        <p className='navbar-item' ref={itemRef} onClick={onClick}>
             {capitalisedValue}
-        </a>
+        </p>
     );
 };
 
