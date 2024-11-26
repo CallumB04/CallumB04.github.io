@@ -1,4 +1,6 @@
 .navbar {
+    position: fixed;
+    z-index: 99;
     width: 100vw;
     height: var(--navbar-height);
     background-color: var(--navbar-color);
@@ -13,5 +15,16 @@
     color: var(--navbar-text-color);
     text-decoration: none;
     font-family: var(--navbar-text-font);
-    font-size: calc(0.95rem + 0.2vw);
+    font-size: var(--navbar-text-size);
+    z-index: 99;
+}
+
+.navbar #navbar-highlighter {
+    position: absolute;
+    height: var(--navbar-text-size);
+    top: 50%;
+    translate: 0 -50%;
+    background-color: var(--navbar-highlighted-color);
+    border-radius: 12px;
+    padding: 20px;
 }
