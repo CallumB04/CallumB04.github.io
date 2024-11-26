@@ -16,7 +16,12 @@
     text-decoration: none;
     font-family: var(--navbar-text-font);
     font-size: var(--navbar-text-size);
+    padding: 10px 15px;
     z-index: 99;
+}
+
+.navbar .navbar-item:hover {
+    cursor: pointer;
 }
 
 .navbar #navbar-highlighter {

@@ -28,8 +28,8 @@ const Navbar = ({ windowWidth, sections }) => {
         const highlight = navbarhighlighter.current;
         const item = findItemToHighlight();
 
-        highlight.style.left = `calc(${getNavbarItemBounds(item).left}px - 10px)`;
-        highlight.style.width = `calc(${getNavbarItemBounds(item).width}px + 20px)`;
+        highlight.style.left = `calc(${getNavbarItemBounds(item).left}px)`;
+        highlight.style.width = `calc(${getNavbarItemBounds(item).width}px)`;
     }, [activeSection, windowWidth]);
 
 
