@@ -41,6 +41,7 @@ const Navbar = ({ windowWidth, sections }) => {
     };
 
     useEffect(() => {
+
         // checks current predominant section each time the page is scrolled
         window.addEventListener("scroll", () => {
 
@@ -56,23 +57,40 @@ const Navbar = ({ windowWidth, sections }) => {
             }}
     })}, []);
 
+    // function to scroll to given section
+    const scrollToSection = (section) => {
+        section.current.scrollIntoView({ behavior: "smooth" })
+    }
+
     return (
         <nav className='navbar'>
-            <NavbarItem value="home" itemRef={navbarHome}></NavbarItem>
-            <NavbarItem value="about" itemRef={navbarAbout}></NavbarItem>
-            <NavbarItem value="projects" itemRef={navbarProjects}></NavbarItem>
+            <NavbarItem 
+                value="home" 
+                itemRef={navbarHome} 
+                onClick={() => scrollToSection(sections.home)}>    
+            </NavbarItem>
+            <NavbarItem 
+                value="about" 
+                itemRef={navbarAbout} 
+                onClick={() => scrollToSection(sections.about)}>    
+            </NavbarItem>
+            <NavbarItem 
+                value="projects" 
+                itemRef={navbarProjects} 
+                onClick={() => scrollToSection(sections.projects)}>    
+            </NavbarItem>
             
             <div id='navbar-highlighter' ref={navbarhighlighter}></div>
         </nav>
     );
 };
 
-const NavbarItem = ({value, itemRef}) => {
+const NavbarItem = ({ value, itemRef, onClick }) => {
 
     const capitalisedValue = value.charAt(0).toUpperCase() + value.slice(1);
 
     return (
-        <a href={`#${value}-section`} className='navbar-item' ref={itemRef}>
+        <a href={`#${value}-section`} className='navbar-item' ref={itemRef} onClick={onClick}>
             {capitalisedValue}
         </a>
     );
