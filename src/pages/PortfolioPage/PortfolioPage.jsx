@@ -1,16 +1,16 @@
 import './PortfolioPage.css';
 
-const PortfolioPage = ({ projects }) => {
+const PortfolioPage = ({ projects, refs }) => {
     
     return (
         <main className='main'>
-            <section className='portfolio-section' id='home-section'>
+            <section className='portfolio-section' id='home-section' ref={refs.homeSection}>
 
             </section>
-            <section className='portfolio-section' id='about-section'>
+            <section className='portfolio-section' id='about-section' ref={refs.aboutSection}>
                 
             </section>
-            <section className='portfolio-section' id='projects-section'>
+            <section className='portfolio-section' id='projects-section' ref={refs.projectsSection}>
                 
             </section>
         </main>

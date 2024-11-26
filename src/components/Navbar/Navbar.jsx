@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { useEffect, useReducer, useRef, useState } from 'react';
 
-const Navbar = ({ windowWidth }) => {
+const Navbar = ({ windowWidth, sections }) => {
 
     const [activeSection, setActiveSection] = useState("home");
     const navbarhighlighter = useRef(null);
@@ -31,6 +31,30 @@ const Navbar = ({ windowWidth }) => {
         highlight.style.left = `calc(${getNavbarItemBounds(item).left}px - 10px)`;
         highlight.style.width = `calc(${getNavbarItemBounds(item).width}px + 20px)`;
     }, [activeSection, windowWidth]);
+
+
+    // function to check if section is the most predominant on the viewport
+    const isSectionInFocus = (section) => {
+        if (section.getBoundingClientRect().y < window.innerHeight / 2) {
+            return true;
+        } return false;
+    };
+
+    useEffect(() => {
+        // checks current predominant section each time the page is scrolled
+        window.addEventListener("scroll", () => {
+
+        // Iterating through 2D array of [<section>, <activeSection state value>]
+        for (const section of [
+            [sections.home, "home"], 
+            [sections.about, "about"], 
+            [sections.projects, "projects"]
+        ]) {
+            // Checking if section is predominant on the viewport
+            if (isSectionInFocus(section[0].current)) { 
+                setActiveSection(section[1]); // Update highlights on navbar
+            }}
+    })}, []);
 
     return (
         <nav className='navbar'>

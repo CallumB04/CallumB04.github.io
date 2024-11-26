@@ -1,5 +1,5 @@
 import './styles/App.css'
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
@@ -34,13 +34,26 @@ function App() {
     };
   }, []);
 
+  // References for the sections in the portfolio page
+  const homeSection = useRef(null);
+  const aboutSection = useRef(null);
+  const projectsSection = useRef(null);
+  
+
   return (
     <Router>
-      <Navbar windowWidth={windowWidth}/>
+      <Navbar 
+        windowWidth={windowWidth}
+        sections={{home: homeSection, about: aboutSection, projects: projectsSection}}
+      />
       <Routes>
         <Route 
           path="/" 
-          element={<PortfolioPage projects={projects} />} 
+          element={
+            <PortfolioPage 
+              projects={projects} 
+              refs={{homeSection: homeSection, aboutSection: aboutSection, projectsSection: projectsSection}}
+            />} 
         />
         <Route
           path="/projects/:projectName"
