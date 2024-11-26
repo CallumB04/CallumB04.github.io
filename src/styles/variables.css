@@ -1,0 +1,9 @@
+/* Variables used throughout whole application */
+:root {
+
+    /* Navigation bar */
+    --navbar-color: #fdc24b;
+
+    /* Highlights */
+    --highlight-color: #ffba2f; /* similar to navbar color, for small details throughout site */
+}
