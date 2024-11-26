@@ -1,4 +1,4 @@
-import 'Navbar.css';
+import './Navbar.css';
 import { useEffect } from 'react';
 
 const Navbar = () => {

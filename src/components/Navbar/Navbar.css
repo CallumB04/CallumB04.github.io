@@ -1,0 +1,17 @@
+.navbar {
+    width: 100vw;
+    height: var(--navbar-height);
+    background-color: var(--navbar-color);
+
+    display: flex;
+    justify-content: center;
+    column-gap: calc(30px + 5vw);
+    align-items: center;
+}
+
+.navbar .navbar-item {
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    font-family: var(--navbar-text-font);
+    font-size: calc(0.95rem + 0.2vw);
+}
