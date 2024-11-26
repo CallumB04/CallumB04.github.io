@@ -3,9 +3,17 @@ import './PortfolioPage.css';
 const PortfolioPage = ({ projects }) => {
     
     return (
-        <>
-        
-        </>
+        <main className='main'>
+            <section className='portfolio-section' id='home-section'>
+
+            </section>
+            <section className='portfolio-section' id='about-section'>
+                
+            </section>
+            <section className='portfolio-section' id='projects-section'>
+                
+            </section>
+        </main>
     );
 };
 
