@@ -27,4 +27,6 @@
     background-color: var(--navbar-highlighted-color);
     border-radius: 12px;
     padding: 20px;
+
+    transition: left 200ms ease, width 200ms ease;
 }
