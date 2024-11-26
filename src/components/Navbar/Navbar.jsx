@@ -3,7 +3,7 @@ import { useEffect, useReducer, useRef, useState } from 'react';
 
 const Navbar = ({ windowWidth }) => {
 
-    const [activeSection, setActiveSection] = useState("about");
+    const [activeSection, setActiveSection] = useState("home");
     const navbarhighlighter = useRef(null);
 
     // DOM references to navbar items
@@ -14,24 +14,22 @@ const Navbar = ({ windowWidth }) => {
     // function to fetch position and width in the DOM of navbar items
     const getNavbarItemBounds = (item) => item.current.getBoundingClientRect();
 
+    // function to map active section to respective navbar item
+    const findItemToHighlight = () => {
+        switch(activeSection) {
+            case "home": return navbarHome;
+            case "about": return navbarAbout;
+            case "projects": return navbarProjects; 
+        };
+    };
+
+    // function to update navbar highlights
     useEffect(() => {
         const highlight = navbarhighlighter.current;
+        const item = findItemToHighlight();
 
-        switch (activeSection) {
-            case "home":
-                highlight.style.left = `calc(${getNavbarItemBounds(navbarHome).left}px - 10px)`;
-                highlight.style.width = `calc(${getNavbarItemBounds(navbarHome).width}px + 20px)`;
-                break;
-            case "about":
-                highlight.style.left = `calc(${getNavbarItemBounds(navbarAbout).left}px - 10px)`;
-                highlight.style.width = `calc(${getNavbarItemBounds(navbarAbout).width}px + 20px)`;
-                break;
-            case "projects":
-                highlight.style.left = `calc(${getNavbarItemBounds(navbarProjects).left}px - 10px)`;
-                highlight.style.width = `calc(${getNavbarItemBounds(navbarProjects).width}px + 20px)`;
-                break;
-
-        }
+        highlight.style.left = `calc(${getNavbarItemBounds(item).left}px - 10px)`;
+        highlight.style.width = `calc(${getNavbarItemBounds(item).width}px + 20px)`;
     }, [activeSection, windowWidth]);
 
     return (
