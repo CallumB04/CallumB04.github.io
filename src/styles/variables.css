@@ -1,8 +1,15 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 /* Variables used throughout whole application */
 :root {
 
     /* Navigation bar */
     --navbar-color: #fdc24b;
+    --navbar-height: 65px;
+    --navbar-highlighted-color: #e0e0e0; /* highlights current section in navbar */
+    --navbar-text-color: #0e0e0e;
+    --navbar-text-font: "Roboto Mono";
 
     /* Highlights */
     --highlight-color: #ffba2f; /* similar to navbar color, for small details throughout site */
