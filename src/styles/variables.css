@@ -14,4 +14,8 @@
 
     /* Highlights */
     --highlight-color: #ffba2f; /* similar to navbar color, for small details throughout site */
+
+    /* Portfolio Page */
+    --background-dark-color: linear-gradient(to bottom right, #262626, #202020);
+    --background-light-color: linear-gradient(to bottom right, #f4f4f4, #ddd);
 }
