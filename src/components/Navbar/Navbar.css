@@ -17,6 +17,7 @@
     font-family: var(--navbar-text-font);
     font-size: var(--navbar-text-size);
     padding: 10px 15px;
+    user-select: none;
     z-index: 99;
 }
 
