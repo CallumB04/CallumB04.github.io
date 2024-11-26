@@ -16,6 +16,7 @@
     text-decoration: none;
     font-family: var(--navbar-text-font);
     font-size: var(--navbar-text-size);
+    font-weight: 800;
     padding: 10px 15px;
     user-select: none;
     z-index: 99;
