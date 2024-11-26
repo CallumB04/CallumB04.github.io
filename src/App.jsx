@@ -1,5 +1,5 @@
 import './styles/App.css'
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
@@ -19,9 +19,24 @@ function App() {
     }
   };
 
+  // holding window width in state to pass to child components
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // adds and removes event listener for handling window resizes on mount/unmount
+  useEffect(() => {
+    const handleResize = () => { setWindowWidth(window.innerWidth) };
+
+    window.addEventListener("resize", handleResize);
+
+    // remove event listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Router>
-      <Navbar />
+      <Navbar windowWidth={windowWidth}/>
       <Routes>
         <Route 
           path="/" 
