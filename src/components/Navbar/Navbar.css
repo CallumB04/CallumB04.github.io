@@ -33,7 +33,7 @@
     translate: 0 -50%;
     background-color: var(--navbar-highlighted-color);
     border-radius: 12px;
-    padding: 20px;
+    padding: 23px;
 
     transition: left 500ms ease, width 500ms ease;
 }
