@@ -66,6 +66,8 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 
+    user-select: none;
+
     display: flex;
     column-gap: calc(8px + 0.3vw);
     justify-content: center;

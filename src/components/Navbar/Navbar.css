@@ -7,7 +7,7 @@
 
     display: flex;
     justify-content: center;
-    column-gap: calc(30px + 5vw);
+    column-gap: calc(16px + 5vw);
     align-items: center;
 }
 
@@ -17,6 +17,8 @@
     font-family: var(--navbar-text-font);
     font-size: var(--navbar-text-size);
     font-weight: 800;
+    -webkit-text-stroke: 0.5px;
+    text-transform: uppercase;
     padding: 10px 15px;
     user-select: none;
     z-index: 99;
