@@ -20,10 +20,13 @@
     padding: 10px 15px;
     user-select: none;
     z-index: 99;
+
+    transition: color 200ms ease;
 }
 
 .navbar .navbar-item:hover {
     cursor: pointer;
+    color: var(--navbar-text-hover-color);
 }
 
 .navbar #navbar-highlighter {

@@ -1,5 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* Variables used throughout whole application */
 :root {
@@ -9,6 +10,7 @@
     --navbar-height: 70px;
     --navbar-highlighted-color: #eeeeee; /* highlights current section in navbar */
     --navbar-text-color: #0e0e0e;
+    --navbar-text-hover-color: #2a2a2a;
     --navbar-text-font: Lato;
     --navbar-text-size: calc(1.05rem + 0.2vw);
 
@@ -18,4 +20,6 @@
     /* Portfolio Page */
     --background-dark-color: linear-gradient(to bottom right, #262626, #202020);
     --background-light-color: linear-gradient(to bottom right, #f4f4f4, #ddd);
+    
+    --home-section-text-font: "Source Sans 3";
 }
