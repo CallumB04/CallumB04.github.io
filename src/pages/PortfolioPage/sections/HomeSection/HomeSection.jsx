@@ -20,7 +20,18 @@ const HomeSection = ({ sectionRef }) => {
                     <a href='mailto:burgoynecallum04@gmail.com' target='_blank'>
                         <i className='home-section-socials fa fa-envelope'></i>
                     </a>
-                </div>     
+                </div>
+
+                <div id='home-section-buttons-wrapper'>
+                    <div className='home-section-button'>
+                        About Me
+                        <i className='fa fa-arrow-right'></i>
+                    </div>
+                    <div className='home-section-button'>
+                        My Projects
+                        <i className='fa fa-arrow-right'></i>
+                    </div>
+                </div>   
             </div>
         </section>
     );

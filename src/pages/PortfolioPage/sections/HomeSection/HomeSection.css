@@ -7,6 +7,7 @@
 #home-section-content {
     width: 90%;
     max-width: 1000px;
+    margin-bottom: calc(50px - 2vw);
 }
 
 #home-section-title {
@@ -41,4 +42,32 @@
     cursor: pointer;
     color: var(--highlight-color);
     scale: 1.05;
+}
+
+#home-section-buttons-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    column-gap: calc(10px + 1vw);
+    margin-top: calc(50px + 2vw);
+}
+
+.home-section-button {
+    width: max-content;
+    padding: calc(19px + 0.2vw) calc(18px + 0.8vw);
+    background-color: var(--highlight-color);
+    color: var(--text-light-color);
+    border-radius: 8px;
+
+    font-family: var(--button-font);
+    font-size: calc(0.85rem + 0.65vw);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    display: flex;
+    column-gap: calc(8px + 0.3vw);
+    justify-content: center;
+    align-items: center;
 }

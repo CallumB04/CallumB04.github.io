@@ -24,6 +24,7 @@
     --text-light-color: #f3f3f3;
     
     --section-title-font: "Source Sans Pro";
-    --home-section-title-size: calc(2rem + 1.7vw);
+    --home-section-title-size: calc(2.4rem + 1.5vw);
 
+    --button-font: "Source Sans Pro";
 }
