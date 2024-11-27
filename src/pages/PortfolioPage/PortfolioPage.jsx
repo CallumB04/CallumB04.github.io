@@ -7,7 +7,7 @@ const PortfolioPage = ({ projects, refs }) => {
     
     return (
         <main className='main'>
-            <HomeSection sectionRef={refs.homeSection}/>
+            <HomeSection sectionRefs={refs}/>
             <AboutSection sectionRef={refs.aboutSection}/>
             <ProjectsSection sectionRef={refs.projectsSection}/>            
         </main>

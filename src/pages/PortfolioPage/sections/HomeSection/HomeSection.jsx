@@ -1,9 +1,18 @@
 import './HomeSection.css';
 
-const HomeSection = ({ sectionRef }) => {
+const HomeSection = ({ sectionRefs }) => {
+
+    // function to scroll to other sections on button press
+    const scrollToSection = (section) => {
+        section.current.scrollIntoView({ behavior: "smooth" })
+    }
+
+    // button functions
+    const scrollToAbout = () => { scrollToSection(sectionRefs.aboutSection) ;}
+    const scrollToProjects = () => { scrollToSection(sectionRefs.projectsSection) ;}
     
     return (
-        <section className='portfolio-section light-mode' id='home-section' ref={sectionRef}>
+        <section className='portfolio-section light-mode' id='home-section' ref={sectionRefs.homeSection}>
             <div id='home-section-content'>
                 <h1 className='section-title' id='home-section-title'>Hi, I'm Callum Burgoyne 👋</h1>  
 
@@ -23,11 +32,11 @@ const HomeSection = ({ sectionRef }) => {
                 </div>
 
                 <div id='home-section-buttons-wrapper'>
-                    <div className='home-section-button'>
+                    <div className='home-section-button' onClick={scrollToAbout}>
                         About Me
                         <i className='fa fa-arrow-right'></i>
                     </div>
-                    <div className='home-section-button'>
+                    <div className='home-section-button' onClick={scrollToProjects}>
                         My Projects
                         <i className='fa fa-arrow-right'></i>
                     </div>
