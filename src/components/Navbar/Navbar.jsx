@@ -1,5 +1,5 @@
 import './Navbar.css';
-import { useEffect, useReducer, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Navbar = ({ windowWidth, sections }) => {
 
