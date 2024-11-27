@@ -25,11 +25,14 @@ const Navbar = ({ windowWidth, sections }) => {
 
     // function to update navbar highlights
     useEffect(() => {
-        const highlight = navbarhighlighter.current;
-        const item = findItemToHighlight();
+        // ensure fonts are loaded before running function on page load
+        document.fonts.ready.then(() => {
+            const highlight = navbarhighlighter.current;
+            const item = findItemToHighlight();
 
-        highlight.style.left = `calc(${getNavbarItemBounds(item).left}px)`;
-        highlight.style.width = `calc(${getNavbarItemBounds(item).width}px)`;
+            highlight.style.left = `calc(${getNavbarItemBounds(item).left}px)`;
+            highlight.style.width = `calc(${getNavbarItemBounds(item).width}px)`;
+        })
     }, [activeSection, windowWidth]);
 
 
