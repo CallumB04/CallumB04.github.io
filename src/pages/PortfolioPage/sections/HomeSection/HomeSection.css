@@ -12,3 +12,32 @@
 #home-section-title {
     font-size: var(--home-section-title-size);
 }
+
+#home-section-socials-wrapper {
+    width: 65%;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    background-color: #dcdcdc;
+    padding: 15px 20px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#home-section-socials-wrapper > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.home-section-socials {
+    font-size: calc(1.9rem + 0.2vw);
+}
+
+.home-section-socials:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition: scale 200ms ease;
+}
