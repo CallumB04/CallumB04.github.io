@@ -1,18 +1,15 @@
 import './PortfolioPage.css';
+import HomeSection from './sections/HomeSection/HomeSection';
+import AboutSection from './sections/AboutSection/AboutSection';
+import ProjectsSection from './sections/ProjectsSection/ProjectsSection';
 
 const PortfolioPage = ({ projects, refs }) => {
     
     return (
         <main className='main'>
-            <section className='portfolio-section light-mode' id='home-section' ref={refs.homeSection}>
-                                
-            </section>
-            <section className='portfolio-section dark-mode' id='about-section' ref={refs.aboutSection}>
-                
-            </section>
-            <section className='portfolio-section light-mode' id='projects-section' ref={refs.projectsSection}>
-                
-            </section>
+            <HomeSection sectionRef={refs.homeSection}/>
+            <AboutSection sectionRef={refs.aboutSection}/>
+            <ProjectsSection sectionRef={refs.projectsSection}/>            
         </main>
     );
 };
