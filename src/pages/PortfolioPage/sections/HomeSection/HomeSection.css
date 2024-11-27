@@ -34,10 +34,11 @@
 
 .home-section-socials {
     font-size: calc(1.9rem + 0.2vw);
+    transition: scale 100ms ease, color 200ms ease;
 }
 
 .home-section-socials:hover {
     cursor: pointer;
+    color: var(--highlight-color);
     scale: 1.05;
-    transition: scale 200ms ease;
 }
