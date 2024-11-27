@@ -1,0 +1,13 @@
+#home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-section-content {
+    
+}
+
+#home-section-title {
+    font-size: var(--home-section-title-size);
+}

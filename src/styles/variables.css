@@ -1,6 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 /* Variables used throughout whole application */
 :root {
@@ -20,6 +20,10 @@
     /* Portfolio Page */
     --background-dark-color: linear-gradient(to bottom right, #262626, #202020);
     --background-light-color: linear-gradient(to bottom right, #f4f4f4, #ddd);
+    --text-dark-color: #111;
+    --text-light-color: #f3f3f3;
     
-    --home-section-text-font: "Source Sans 3";
+    --section-title-font: "Source Sans Pro";
+    --home-section-title-size: calc(1.5rem + 2vw);
+
 }

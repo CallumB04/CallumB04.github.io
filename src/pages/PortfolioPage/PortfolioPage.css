@@ -14,7 +14,17 @@
 
 .portfolio-section.light-mode {
     background: var(--background-light-color);
+    color: var(--text-dark-color);
 }
 .portfolio-section.dark-mode {
     background: var(--background-dark-color);
+    color: var(--text-light-color);
+}
+
+.section-title {
+    font-family: var(--section-title-font);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
