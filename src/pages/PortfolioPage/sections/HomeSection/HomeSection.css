@@ -5,7 +5,8 @@
 }
 
 #home-section-content {
-    
+    width: 90%;
+    max-width: 1000px;
 }
 
 #home-section-title {
