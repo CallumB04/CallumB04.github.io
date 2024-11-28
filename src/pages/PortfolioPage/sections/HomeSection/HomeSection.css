@@ -75,9 +75,10 @@
     width: max-content;
     padding: calc(19px + 0.2vw) calc(18px + 0.8vw);
     background-color: var(--highlight-color);
-    color: var(--text-light-color);
+    color: var(--text-dark-color);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+    transition: color 200ms ease, transform 250ms ease;
 
     font-family: var(--button-font);
     font-size: calc(0.9rem + 0.45vw);
@@ -93,16 +94,8 @@
     align-items: center;
 }
 
-@keyframes button-jump {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-4px);
-    }
-}
-
 .home-section-button:hover {
     cursor: pointer;
-    animation: 300ms button-jump ease;
+    transform: translateY(-4px);
+    color: var(--text-light-color);
 }
