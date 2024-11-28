@@ -13,7 +13,15 @@ const AboutSection = ({ sectionRef }) => {
                 I'm currently seeking a <strong>Level 4 Apprenticeship</strong> in any 
                 area of Software Development, and eager to bring my skills and passion 
                 for learning to a collaborative work environment!
-            </p>       
+            </p>
+
+            <h2 className='section-title about-section-title'>Tech Stack</h2>
+            <h3 className='section-title about-section-subtitle'>Languages</h3>
+
+            <h3 className='section-title about-section-subtitle'>Frameworks + Libraries</h3>
+
+            <h3 className='section-title about-section-subtitle'>Other Technologies</h3>
+
         </section>
     );
 };

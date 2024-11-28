@@ -1,3 +1,7 @@
+#about-section {
+    padding-bottom: 70px;
+}
+
 .about-section-title {
     font-size: calc(1.7rem + 1.4vw);
     padding-top: 50px;
@@ -9,4 +13,9 @@
     max-width: 90%;
     font-weight: 300;
     margin-top: 20px;
+}
+
+.about-section-subtitle {
+    font-size: calc(1rem + 1vw);
+    padding-top: 30px;
 }
