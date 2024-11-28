@@ -2,12 +2,14 @@ import './AboutSection.css';
 
 const AboutSection = ({ sectionRef }) => {
 
-    // storing skills in 2D arrays, <skill, devicon class>
+    // storing skills in 2D arrays, <skill, hover text, devicon class>
     // automatically maps to JSX in respective sections
     const skillsLanguages = [
-        ["python", "python"], 
-        ["html", "html5"], 
-        ["css", "css3"]];
+        ["python", "python", "python"], 
+        ["html", "html", "html5"], 
+        ["css", "css", "css3"],
+        ["cpp", "c\+\+", "cplusplus"],
+        ["js", "js", "javascript"]];
     const skillsFworksAndLibs = [];
     const skillsOther = [];
 
@@ -33,11 +35,11 @@ const AboutSection = ({ sectionRef }) => {
             <div className='about-section-skills-wrapper'>
                 {skillsLanguages.map((skill) => {
                     return (
-                        <div className='about-section-skill' id={`about-skill-${skill[0]}`}>
-                            <i className={`devicon-${skill[1]}-plain`}></i>
+                        <div key={skill[0]} className='about-section-skill' id={`about-skill-${skill[0]}`}>
+                            <i className={`devicon-${skill[2]}-plain`}></i>
                             <style>{`
                                 #about-skill-${skill[0]}::after {
-                                    content: "${capitalize(skill[0])}";
+                                    content: "${capitalize(skill[1])}";
                                 }`}
                             </style>
                         </div>
