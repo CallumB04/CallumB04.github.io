@@ -9,9 +9,16 @@ const AboutSection = ({ sectionRef }) => {
         ["html", "html", "html5"], 
         ["css", "css", "css3"],
         ["cpp", "c\+\+", "cplusplus"],
-        ["js", "js", "javascript"]];
-    const skillsFworksAndLibs = [];
-    const skillsOther = [];
+        ["js", "javascript", "javascript"]];
+    const skillsFworksAndLibs = [
+        ["react", "react", "react"]
+    ];
+    const skillsOther = [
+        ["git", "git", "git"],
+        ["linux", "linux", "linux"],
+        ["docker", "docker", "docker"],
+        ["sass", "sass", "sass"]
+    ];
 
     // function to capitalize first letter, for skill hover text
     const capitalize = (str) => str ? str[0].toUpperCase() + str.slice(1) : "";
@@ -48,8 +55,36 @@ const AboutSection = ({ sectionRef }) => {
             </div>
 
             <h3 className='section-title about-section-subtitle'>Frameworks + Libraries</h3>
+            <div className='about-section-skills-wrapper'>
+                {skillsFworksAndLibs.map((skill) => {
+                    return (
+                        <div key={skill[0]} className='about-section-skill' id={`about-skill-${skill[0]}`}>
+                            <i className={`devicon-${skill[2]}-plain`}></i>
+                            <style>{`
+                                #about-skill-${skill[0]}::after {
+                                    content: "${capitalize(skill[1])}";
+                                }`}
+                            </style>
+                        </div>
+                    )
+                } )}
+            </div>
 
             <h3 className='section-title about-section-subtitle'>Other Technologies</h3>
+            <div className='about-section-skills-wrapper'>
+                {skillsOther.map((skill) => {
+                    return (
+                        <div key={skill[0]} className='about-section-skill' id={`about-skill-${skill[0]}`}>
+                            <i className={`devicon-${skill[2]}-plain`}></i>
+                            <style>{`
+                                #about-skill-${skill[0]}::after {
+                                    content: "${capitalize(skill[1])}";
+                                }`}
+                            </style>
+                        </div>
+                    )
+                } )}
+            </div>
 
         </section>
     );
