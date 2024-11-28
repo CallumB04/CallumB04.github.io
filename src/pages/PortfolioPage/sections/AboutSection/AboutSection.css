@@ -3,8 +3,8 @@
 }
 
 .about-section-title {
-    font-size: calc(1.7rem + 1.4vw);
-    padding-top: 50px;
+    font-size: calc(2rem + 1.4vw);
+    padding-top: 60px;
 }
 
 #about-section-description {
@@ -16,7 +16,7 @@
 }
 
 .about-section-subtitle {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1.2rem + 1vw);
     padding-top: 30px;
 }
 
