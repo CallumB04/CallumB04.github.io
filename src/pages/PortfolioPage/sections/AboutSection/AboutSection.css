@@ -30,18 +30,19 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: calc(10px + 1.5vw);
 }
 
 .about-section-skill {
-    border: 1.5px solid var(--text-light-color);
+    border: calc(1px + 0.1vw) solid var(--text-light-color);
     border-radius: 10px;
-    padding: 6px;
+    padding: 8px;
     padding-bottom: 4px;
     position: relative;
 }
 
 .about-section-skill > i {
-    font-size: calc(2rem + 2vw);
+    font-size: calc(2.3rem + 2.3vw);
 }
 
 .about-section-skill::after {
@@ -50,13 +51,13 @@
     top: 50%;
     left: 50%;
     opacity: 0;
-    transition: opacity 200ms ease;
+    transition: opacity 300ms ease;
     font-family: "Source Sans Pro";
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
-    font-size: calc(0.5rem + 0.5vw);
-    background-color: var(--text-light-color);
+    font-size: calc(0.6rem + 0.55vw);
+    background-color: var(--navbar-color);
     color: var(--text-dark-color);
     padding: 2px;
     border-radius: 5px;
@@ -64,10 +65,4 @@
 
 .about-section-skill:hover::after {
     opacity: 1;
-}
-
-/* Text content for skills */
-
-#about-skill-python::after {
-    content: "Python";
 }
