@@ -1,6 +1,18 @@
 import './AboutSection.css';
 
 const AboutSection = ({ sectionRef }) => {
+
+    // storing skills in 2D arrays, <skill, devicon class>
+    // automatically maps to JSX in respective sections
+    const skillsLanguages = [
+        ["python", "python"], 
+        ["html", "html5"], 
+        ["css", "css3"]];
+    const skillsFworksAndLibs = [];
+    const skillsOther = [];
+
+    // function to capitalize first letter, for skill hover text
+    const capitalize = (str) => str ? str[0].toUpperCase() + str.slice(1) : "";
     
     return (
         <section className='portfolio-section dark-mode' id='about-section' ref={sectionRef}>
@@ -19,9 +31,18 @@ const AboutSection = ({ sectionRef }) => {
 
             <h3 className='section-title about-section-subtitle'>Languages</h3>
             <div className='about-section-skills-wrapper'>
-                <div className='about-section-skill' id='about-skill-python'>
-                    <i class="devicon-python-plain"></i>
-                </div>
+                {skillsLanguages.map((skill) => {
+                    return (
+                        <div className='about-section-skill' id={`about-skill-${skill[0]}`}>
+                            <i className={`devicon-${skill[1]}-plain`}></i>
+                            <style>{`
+                                #about-skill-${skill[0]}::after {
+                                    content: "${capitalize(skill[0])}";
+                                }`}
+                            </style>
+                        </div>
+                    )
+                } )}
             </div>
 
             <h3 className='section-title about-section-subtitle'>Frameworks + Libraries</h3>
