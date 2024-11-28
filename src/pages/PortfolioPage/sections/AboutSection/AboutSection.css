@@ -51,7 +51,8 @@
     top: 50%;
     left: 50%;
     opacity: 0;
-    transition: opacity 300ms ease;
+    scale: 0;
+    transition: opacity 300ms ease, scale 200ms ease;
     font-family: "Source Sans Pro";
     text-transform: uppercase;
     font-weight: 800;
@@ -65,4 +66,5 @@
 
 .about-section-skill:hover::after {
     opacity: 1;
+    scale: 1;
 }
