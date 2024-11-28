@@ -7,18 +7,34 @@
 #home-section-content {
     width: 90%;
     max-width: 1000px;
-    margin-bottom: calc(50px - 2vw);
+    margin-bottom: calc(100px - 6vw);
 }
 
 #home-section-title {
     font-size: var(--home-section-title-size);
 }
 
+#home-section-description {
+    font-family: var(--section-description-font);
+    color: #333;
+    font-size: calc(1rem + 0.3vw);
+    width: 55ch;
+    max-width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: calc(10px + 0.2vw);
+    font-weight: 400;
+}
+
+#home-section-description > strong {
+    color: #222;
+}
+
 #home-section-socials-wrapper {
     width: 65%;
     max-width: 250px;
     margin: 0 auto;
-    margin-top: calc(50px + 2vw);
+    margin-top: calc(70px + 0.2vw);
 
     background-color: #dcdcdc;
     padding: 15px 20px;
