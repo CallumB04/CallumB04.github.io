@@ -16,7 +16,13 @@ const AboutSection = ({ sectionRef }) => {
             </p>
 
             <h2 className='section-title about-section-title'>Tech Stack</h2>
+
             <h3 className='section-title about-section-subtitle'>Languages</h3>
+            <div className='about-section-skills-wrapper'>
+                <div className='about-section-skill' id='about-skill-python'>
+                    <i class="devicon-python-plain"></i>
+                </div>
+            </div>
 
             <h3 className='section-title about-section-subtitle'>Frameworks + Libraries</h3>
 

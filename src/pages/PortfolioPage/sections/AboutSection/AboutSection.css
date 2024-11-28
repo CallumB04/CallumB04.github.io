@@ -19,3 +19,55 @@
     font-size: calc(1rem + 1vw);
     padding-top: 30px;
 }
+
+.about-section-skills-wrapper {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1000px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-section-skill {
+    border: 1.5px solid var(--text-light-color);
+    border-radius: 10px;
+    padding: 6px;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.about-section-skill > i {
+    font-size: calc(2rem + 2vw);
+}
+
+.about-section-skill::after {
+    position: absolute;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 200ms ease;
+    font-family: "Source Sans Pro";
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: calc(0.5rem + 0.5vw);
+    background-color: var(--text-light-color);
+    color: var(--text-dark-color);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.about-section-skill:hover::after {
+    opacity: 1;
+}
+
+/* Text content for skills */
+
+#about-skill-python::after {
+    content: "Python";
+}
