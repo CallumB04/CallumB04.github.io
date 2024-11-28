@@ -7,7 +7,7 @@
 
     /* Navigation bar */
     --navbar-color: #fdc24b;
-    --navbar-height: 70px;
+    --navbar-height: 80px;
     --navbar-highlighted-color: #eeeeee; /* highlights current section in navbar */
     --navbar-text-color: #0e0e0e;
     --navbar-text-hover-color: #2a2a2a;
@@ -25,7 +25,7 @@
     
     --section-title-font: "Source Sans Pro";
     --section-description-font: "Source Sans Pro";
-    --home-section-title-size: calc(2.4rem + 1.5vw);
+    --home-section-title-size: calc(2.4rem + 1.7vw);
 
     --button-font: "Source Sans Pro";
 }

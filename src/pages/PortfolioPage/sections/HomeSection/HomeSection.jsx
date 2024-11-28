@@ -14,7 +14,7 @@ const HomeSection = ({ sectionRefs }) => {
     return (
         <section className='portfolio-section light-mode' id='home-section' ref={sectionRefs.homeSection}>
             <div id='home-section-content'>
-                <h1 className='section-title' id='home-section-title'>Hi, I'm Callum Burgoyne 👋</h1>
+                <h1 className='section-title' id='home-section-title'>Hi, I'm Callum Burgoyne</h1>
 
                 <p id='home-section-description'>
                     A self-taught <strong>Software Developer</strong>, looking for an Apprenticeship to start

@@ -7,7 +7,7 @@
 #home-section-content {
     width: 90%;
     max-width: 1000px;
-    margin-bottom: calc(100px - 6vw);
+    margin-bottom: calc(100px - 5.5vw);
 }
 
 #home-section-title {
@@ -17,13 +17,14 @@
 #home-section-description {
     font-family: var(--section-description-font);
     color: #333;
-    font-size: calc(1rem + 0.3vw);
+    font-size: calc(1rem + 0.4vw);
     width: 55ch;
     max-width: 80vw;
     text-align: center;
     margin: 0 auto;
-    margin-top: calc(10px + 0.2vw);
+    margin-top: calc(10px + 1.5vw);
     font-weight: 400;
+    line-height: calc(20px + 0.8vw);
 }
 
 #home-section-description > strong {
@@ -34,7 +35,7 @@
     width: 65%;
     max-width: 250px;
     margin: 0 auto;
-    margin-top: calc(70px + 0.2vw);
+    margin-top: calc(60px + 0.2vw);
 
     background-color: #dcdcdc;
     padding: 15px 20px;
@@ -67,7 +68,7 @@
     display: flex;
     justify-content: center;
     column-gap: calc(10px + 1vw);
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .home-section-button {
@@ -79,7 +80,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
 
     font-family: var(--button-font);
-    font-size: calc(0.85rem + 0.65vw);
+    font-size: calc(0.9rem + 0.45vw);
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
