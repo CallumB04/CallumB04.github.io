@@ -31,12 +31,23 @@
 
 .section-description {
     font-family: var(--section-description-font);
-    color: #333;
     text-align: center;
     margin: 0 auto;
     font-weight: 400;
 }
 
-.section-description > strong {
+.portfolio-section.light-mode .section-description {
+    color: #333;
+}
+
+.portfolio-section.dark-mode .section-description {
+    color: #ddd;
+}
+
+.portfolio-section.light-mode .section-description > strong {
     color: #222;
+}
+
+.portfolio-section.dark-mode .section-description > strong {
+    color: #eee;
 }
