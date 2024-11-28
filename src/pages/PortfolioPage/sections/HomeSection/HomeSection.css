@@ -39,6 +39,7 @@
     background-color: #dcdcdc;
     padding: 15px 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10);
 
     display: flex;
     justify-content: space-between;
@@ -75,6 +76,7 @@
     background-color: var(--highlight-color);
     color: var(--text-light-color);
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
 
     font-family: var(--button-font);
     font-size: calc(0.85rem + 0.65vw);
