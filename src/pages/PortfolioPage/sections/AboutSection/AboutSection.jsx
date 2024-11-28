@@ -19,9 +19,6 @@ const AboutSection = ({ sectionRef }) => {
         ["docker", "docker", "docker"],
         ["sass", "sass", "sass"]
     ];
-
-    // function to capitalize first letter, for skill hover text
-    const capitalize = (str) => str ? str[0].toUpperCase() + str.slice(1) : "";
     
     return (
         <section className='portfolio-section dark-mode' id='about-section' ref={sectionRef}>
@@ -46,7 +43,7 @@ const AboutSection = ({ sectionRef }) => {
                             <i className={`devicon-${skill[2]}-plain`}></i>
                             <style>{`
                                 #about-skill-${skill[0]}::after {
-                                    content: "${capitalize(skill[1])}";
+                                    content: "${skill[1]}";
                                 }`}
                             </style>
                         </div>
@@ -62,7 +59,7 @@ const AboutSection = ({ sectionRef }) => {
                             <i className={`devicon-${skill[2]}-plain`}></i>
                             <style>{`
                                 #about-skill-${skill[0]}::after {
-                                    content: "${capitalize(skill[1])}";
+                                    content: "${skill[1]}";
                                 }`}
                             </style>
                         </div>
@@ -78,7 +75,7 @@ const AboutSection = ({ sectionRef }) => {
                             <i className={`devicon-${skill[2]}-plain`}></i>
                             <style>{`
                                 #about-skill-${skill[0]}::after {
-                                    content: "${capitalize(skill[1])}";
+                                    content: "${skill[1]}";
                                 }`}
                             </style>
                         </div>
