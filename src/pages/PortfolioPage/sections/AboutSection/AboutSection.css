@@ -46,8 +46,8 @@
     font-size: calc(1.1rem + 0.85vw);
     text-transform: uppercase;
     letter-spacing: 2px;
-    width: max-content;
-    padding: calc(19px + 0.2vw) calc(18px + 0.8vw);
+    width: calc(220px + 10vw);
+    height: calc(80px + 1vw);
     margin: 0 auto;
     margin-top: 35px;
     
@@ -56,21 +56,41 @@
     text-decoration: none;
     border: 2.5px solid var(--highlight-color);
     border-radius: 40px;
+    position: relative;
     
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    column-gap: calc(12px + 0.5vw);
-    overflow-x: hidden;
+    display: block;
+    transition: width 300ms ease;
+}
+
+#download-cv-button > * {
+    position: absolute;
+    translate: -50% -50%;
+    top: 50%;
 }
 
 #download-cv-button > i {
     font-size: calc(1.5rem + 0.9vw);
+    left: calc(18% - 4px);
+    
+    transition: font-size 100ms ease, left 300ms ease;
+}
+
+@keyframes fade-cv-btn-text {
+    0%, 80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#download-cv-button > p {
+    right: calc(-15% - 14px);
 }
 
 .about-section-subtitle {
     font-size: calc(1.2rem + 1vw);
-    width:max-content;
+    width: max-content;
     margin: 0 auto;
     margin-top: 50px;
 }

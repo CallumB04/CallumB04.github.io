@@ -1,4 +1,6 @@
+import { useRef } from 'react';
 import './AboutSection.css';
+import { useEffect } from 'react';
 
 const AboutSection = ({ sectionRef }) => {
 
@@ -21,6 +23,35 @@ const AboutSection = ({ sectionRef }) => {
         ["docker", "docker", "docker"],
         ["sass", "sass", "sass"]
     ];
+
+    // references to download cv button elements, for animation
+    const CVButtonRef = useRef(null);
+    const CVButtonTextRef = useRef(null);
+    const CVButtonIconRef = useRef(null);
+
+    // handling CV button animation on hover
+    useEffect(() => {
+        const CVButton = CVButtonRef.current;
+        const CVButtonText = CVButtonTextRef.current;
+        const CVButtonIcon = CVButtonIconRef.current;
+
+        CVButton.addEventListener("mouseover", () => {
+            CVButton.style.width = "calc(150px + 6.5vw)";
+            CVButtonIcon.style.fontSize = "calc(1.9rem + 1.2vw)";
+            CVButtonIcon.style.color = "var(--highlight-color)";
+            CVButtonIcon.style.left = "50%";
+            CVButtonText.style.display = "none";
+            CVButtonText.style.animation = "400ms fade-cv-btn-text linear";         
+        });
+
+        CVButton.addEventListener("mouseout", () => {
+            CVButton.style.width = "calc(220px + 10vw)";
+            CVButtonIcon.style.fontSize = "calc(1.5rem + 0.9vw)";
+            CVButtonIcon.style.color = "var(--text-light-color)";
+            CVButtonIcon.style.left = "calc(18% - 4px)";
+            CVButtonText.style.display = "block";
+        });
+    }, [])
     
     return (
         <section className='portfolio-section dark-mode' id='about-section' ref={sectionRef}>
@@ -35,9 +66,9 @@ const AboutSection = ({ sectionRef }) => {
                 for learning to a collaborative work environment!
             </p>
 
-            <a id='download-cv-button' href='/assets/Callum_Burgoyne_CV.pdf' download>
-                <i className='fas fa-download'></i> 
-                <p>Download CV</p>
+            <a ref={CVButtonRef} id='download-cv-button' href='/assets/Callum_Burgoyne_CV.pdf' download>
+                <i ref={CVButtonIconRef} className='fas fa-download'></i> 
+                <p ref={CVButtonTextRef}>Download CV</p>
             </a>
 
             <h2 className='section-title about-section-title'>Tech Stack</h2>
