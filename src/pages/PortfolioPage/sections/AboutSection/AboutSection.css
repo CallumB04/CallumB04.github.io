@@ -8,9 +8,9 @@
 }
 
 #about-section-description {
-    font-size: calc(0.75rem + 0.5vw);
+    font-size: calc(0.9rem + 0.45vw);
     width: 80ch;
-    max-width: 90%;
+    max-width: 85%;
     font-weight: 300;
     margin-top: 20px;
 }
