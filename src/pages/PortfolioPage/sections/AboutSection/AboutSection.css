@@ -42,14 +42,9 @@
 
 .about-section-subtitle {
     font-size: calc(1.2rem + 1vw);
-    width: max-content;
+    width:max-content;
     margin: 0 auto;
-    margin-top: 35px;
-    padding-top: 25px;
-}
-
-.about-section-subtitle:not(:first-of-type) {
-    border-top: 1px solid var(--text-light-color);
+    margin-top: 50px;
 }
 
 .about-section-skills-wrapper {
