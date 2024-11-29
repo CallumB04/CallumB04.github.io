@@ -81,7 +81,5 @@
 .non-devicon-skill .non-devicon-icon {
     width: 1em; 
     height: 1em; 
-    object-fit: contain;
-    filter: grayscale(100%) invert(100%) brightness(2.5)
-      
+    object-fit: contain;      
 }
