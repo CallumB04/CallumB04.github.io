@@ -68,13 +68,13 @@
 .about-section-skill {
     border: calc(1px + 0.1vw) solid var(--text-light-color);
     border-radius: 10px;
-    padding: 8px;
-    padding-bottom: 4px;
+    padding: var(--about-section-skill-padding);
+    padding-bottom: 5.5px;
     position: relative;
 }
 
 .about-section-skill > i {
-    font-size: calc(2.3rem + 2.3vw);
+    font-size: var(--about-section-skill-font-size);
 }
 
 .about-section-skill::after {
@@ -89,7 +89,7 @@
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
-    font-size: calc(0.6rem + 0.55vw);
+    font-size: calc(0.7rem + 0.5vw);
     background-color: var(--navbar-color);
     color: var(--text-dark-color);
     padding: 2px;
@@ -105,8 +105,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(2.3rem + 2.3vw);
-    padding: 8px;
+    font-size: var(--about-section-skill-font-size);
+    padding: var(--about-section-skill-padding);
     position: relative;
 }
 
