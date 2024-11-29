@@ -4,6 +4,7 @@ const AboutSection = ({ sectionRef }) => {
 
     // storing skills in 2D arrays, <skill, hover text, devicon class>
     // automatically maps to JSX in respective sections
+    // for non devicon icons, arrays with have length of 2 <skill/hover text, img url>
     const skillsLanguages = [
         ["python", "python", "python"], 
         ["html", "html", "html5"], 
@@ -11,7 +12,8 @@ const AboutSection = ({ sectionRef }) => {
         ["cpp", "c\+\+", "cplusplus"],
         ["js", "javascript", "javascript"]];
     const skillsFworksAndLibs = [
-        ["react", "react", "react"]
+        ["react", "react", "react"],
+        ["sfml", "SFML.svg"]
     ];
     const skillsOther = [
         ["git", "git", "git"],
@@ -38,12 +40,22 @@ const AboutSection = ({ sectionRef }) => {
             <h3 className='section-title about-section-subtitle'>Languages</h3>
             <div className='about-section-skills-wrapper'>
                 {skillsLanguages.map((skill) => {
-                    return (
+                    return skill.length === 3 ? (
                         <div key={skill[0]} className='about-section-skill' id={`about-skill-${skill[0]}`}>
                             <i className={`devicon-${skill[2]}-plain`}></i>
                             <style>{`
                                 #about-skill-${skill[0]}::after {
                                     content: "${skill[1]}";
+                                }`}
+                            </style>
+                        </div>
+                    )
+                    : (
+                        <div key={skill[0]} className='about-section-skill non-devicon-skill' id={`about-skill-${skill[0]}`}>
+                            <img src={`../../../../assets/skill-icons/${skill[1]}`} className='non-devicon-icon' />
+                            <style>{`
+                                #about-skill-${skill[0]}::after {
+                                    content: "${skill[0]}";
                                 }`}
                             </style>
                         </div>
@@ -54,12 +66,22 @@ const AboutSection = ({ sectionRef }) => {
             <h3 className='section-title about-section-subtitle'>Frameworks + Libraries</h3>
             <div className='about-section-skills-wrapper'>
                 {skillsFworksAndLibs.map((skill) => {
-                    return (
+                    return skill.length === 3 ? (
                         <div key={skill[0]} className='about-section-skill' id={`about-skill-${skill[0]}`}>
                             <i className={`devicon-${skill[2]}-plain`}></i>
                             <style>{`
                                 #about-skill-${skill[0]}::after {
                                     content: "${skill[1]}";
+                                }`}
+                            </style>
+                        </div>
+                    )
+                    : (
+                        <div key={skill[0]} className='about-section-skill non-devicon-skill' id={`about-skill-${skill[0]}`}>
+                            <img src={`/assets/skill-icons/${skill[1]}`} className='non-devicon-icon' />
+                            <style>{`
+                                #about-skill-${skill[0]}::after {
+                                    content: "${skill[0]}";
                                 }`}
                             </style>
                         </div>
@@ -70,12 +92,22 @@ const AboutSection = ({ sectionRef }) => {
             <h3 className='section-title about-section-subtitle'>Other Technologies</h3>
             <div className='about-section-skills-wrapper'>
                 {skillsOther.map((skill) => {
-                    return (
+                    return skill.length === 3 ? (
                         <div key={skill[0]} className='about-section-skill' id={`about-skill-${skill[0]}`}>
                             <i className={`devicon-${skill[2]}-plain`}></i>
                             <style>{`
                                 #about-skill-${skill[0]}::after {
                                     content: "${skill[1]}";
+                                }`}
+                            </style>
+                        </div>
+                    )
+                    : (
+                        <div key={skill[0]} className='about-section-skill non-devicon-skill' id={`about-skill-${skill[0]}`}>
+                            <img src={`../../../../assets/skill-icons/${skill[1]}`} className='non-devicon-icon' />
+                            <style>{`
+                                #about-skill-${skill[0]}::after {
+                                    content: "${skill[0]}";
                                 }`}
                             </style>
                         </div>
