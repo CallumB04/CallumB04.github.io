@@ -36,7 +36,6 @@ const AboutSection = ({ sectionRef }) => {
         const CVButtonIcon = CVButtonIconRef.current;
 
         CVButton.addEventListener("mouseover", () => {
-            CVButton.style.width = "calc(150px + 6.5vw)";
             CVButtonIcon.style.fontSize = "calc(1.9rem + 1.2vw)";
             CVButtonIcon.style.color = "var(--highlight-color)";
             CVButtonIcon.style.left = "50%";
@@ -45,7 +44,6 @@ const AboutSection = ({ sectionRef }) => {
         });
 
         CVButton.addEventListener("mouseout", () => {
-            CVButton.style.width = "calc(220px + 10vw)";
             CVButtonIcon.style.fontSize = "calc(1.5rem + 0.9vw)";
             CVButtonIcon.style.color = "var(--text-light-color)";
             CVButtonIcon.style.left = "calc(18% - 4px)";

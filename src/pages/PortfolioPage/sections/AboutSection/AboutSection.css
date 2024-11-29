@@ -59,7 +59,6 @@
     position: relative;
     
     display: block;
-    transition: width 300ms ease;
 }
 
 #download-cv-button > * {
