@@ -26,7 +26,7 @@ const AboutSection = ({ sectionRef }) => {
         <section className='portfolio-section dark-mode' id='about-section' ref={sectionRef}>
             <h2 className='section-title about-section-title'>About me</h2>
             <p className='section-description' id='about-section-description'>
-                Hi, I'm Callum, a 20 year old self-taught Software Developer 
+                Hi, I'm Callum, a <strong>20 year old</strong> self-taught Software Developer 
                 from <strong>Kent, United Kingdom</strong>. I'm passionate about creating 
                 efficient software, with experience in <strong>Web Development</strong>
                 , <strong>Game Development</strong>, and <strong>Backend Systems</strong>. 
