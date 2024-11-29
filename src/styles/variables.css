@@ -28,4 +28,7 @@
     --home-section-title-size: calc(2.4rem + 1.7vw);
 
     --button-font: "Source Sans Pro";
+
+    --about-section-skill-font-size: calc(2.8rem + 2.1vw);
+    --about-section-skill-padding: 8px;
 }
