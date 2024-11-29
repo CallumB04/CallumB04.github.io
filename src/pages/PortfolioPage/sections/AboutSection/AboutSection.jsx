@@ -35,6 +35,11 @@ const AboutSection = ({ sectionRef }) => {
                 for learning to a collaborative work environment!
             </p>
 
+            <a id='download-cv-button'>
+                <i className='fas fa-download'></i> 
+                <p>Download CV</p>
+            </a>
+
             <h2 className='section-title about-section-title'>Tech Stack</h2>
 
             <h3 className='section-title about-section-subtitle'>Languages</h3>

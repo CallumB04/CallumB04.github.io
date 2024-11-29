@@ -40,6 +40,32 @@
     margin-top: 20px;
 }
 
+#download-cv-button {
+    font-family: var(--button-font);
+    font-weight: 600;
+    font-size: calc(1.1rem + 0.85vw);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: max-content;
+    padding: calc(19px + 0.2vw) calc(18px + 0.8vw);
+    margin: 0 auto;
+    margin-top: 35px;
+    
+    background-color: transparent;
+    border: 2.5px solid var(--highlight-color);
+    border-radius: 40px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: calc(12px + 0.5vw);
+    overflow-x: hidden;
+}
+
+#download-cv-button > i {
+    font-size: calc(1.5rem + 0.9vw);
+}
+
 .about-section-subtitle {
     font-size: calc(1.2rem + 1vw);
     width:max-content;
