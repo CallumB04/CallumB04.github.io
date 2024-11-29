@@ -52,6 +52,8 @@
     margin-top: 35px;
     
     background-color: transparent;
+    color: var(--text-light-color);
+    text-decoration: none;
     border: 2.5px solid var(--highlight-color);
     border-radius: 40px;
     

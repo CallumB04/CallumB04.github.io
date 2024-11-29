@@ -35,7 +35,7 @@ const AboutSection = ({ sectionRef }) => {
                 for learning to a collaborative work environment!
             </p>
 
-            <a id='download-cv-button'>
+            <a id='download-cv-button' href='/assets/Callum_Burgoyne_CV.pdf' download>
                 <i className='fas fa-download'></i> 
                 <p>Download CV</p>
             </a>
