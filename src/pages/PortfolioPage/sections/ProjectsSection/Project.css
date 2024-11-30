@@ -1,5 +1,5 @@
 .projects-section-project {
-    width: 35vw;
+    width: 25vw;
     min-width: 360px;
     aspect-ratio: 1;
     height: auto;
@@ -40,8 +40,8 @@
 
 .projects-section-project-content {
     position: absolute;
-    bottom: calc(12px + 1vw);
-    left: calc(12px + 1vw);
+    bottom: calc(12px + 0.4vw);
+    left: calc(12px + 0.4vw);
     color: var(--text-light-color);
     opacity: 0;
     transform: translateY(20px);
@@ -49,24 +49,24 @@
 }
 
 .projects-section-project-title {
-    font-size: calc(1.3rem + 0.8vw);
+    font-size: calc(1.3rem + 0.6vw);
     font-family: "Source Sans Pro";
     font-weight: 600;
     color: var(--highlight-color);
 }
 
 .projects-section-project-description {
-    font-size: calc(0.9rem + 0.45vw);
+    font-size: calc(0.9rem + 0.25vw);
     margin-top: 4px;
     font-family: Lato;
-    max-width: 35ch;
+    max-width: 30ch;
 }
 
 .projects-section-project-technologies {
     margin-top: calc(12px + 1vw);
 
     display: flex;
-    gap: calc(12px + 0.2vw);
+    gap: calc(10px + 0.1vw);
 }
 
 .projects-section-project-technology {
@@ -77,4 +77,5 @@
     padding: 7px 14px;
     border-radius: 30px;
     user-select: none;
+    font-size: calc(0.8rem + 0.15vw);
 }
