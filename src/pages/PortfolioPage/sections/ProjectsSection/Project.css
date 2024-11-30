@@ -1,10 +1,10 @@
 .projects-section-project {
-    width: 42%;
+    width: 35vw;
     min-width: 360px;
     aspect-ratio: 1;
     height: auto;
 
-    border: 1.5px solid var(--text-dark-color); 
+    border: 2px solid var(--text-dark-color); 
     border-radius: 20px;
 
     position: relative;
@@ -59,6 +59,7 @@
     font-size: calc(0.9rem + 0.45vw);
     margin-top: 4px;
     font-family: Lato;
+    max-width: 35ch;
 }
 
 .projects-section-project-technologies {
@@ -73,7 +74,7 @@
     color: var(--text-dark-color);
     letter-spacing: 0.5px;
     font-family: Lato;
-    padding: 7px 12px;
+    padding: 7px 14px;
     border-radius: 30px;
     user-select: none;
 }

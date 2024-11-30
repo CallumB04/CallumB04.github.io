@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom';
 import './Project.css';
 import { useEffect, useRef } from 'react';
 
-const Project = () => {
+const Project = ({ projectKey, project }) => {
 
     const projectRef = useRef(null); // project
     const projectDarkenRef = useRef(null); // background to fade over image when text appears
     const projectContentRef = useRef(null); // title, description and technologies
 
+    // handling project hover animations
     useEffect(() => {
         let project = projectRef.current;
         let background = projectDarkenRef.current;
@@ -26,25 +28,27 @@ const Project = () => {
     }, [])
 
     return (
-        <div className='projects-section-project' ref={projectRef}>
-            <img 
-                src='/assets/project-images/react-todolist.png' 
-                className='projects-section-project-image'
-            />
-
-            <div className='projects-section-project-darken' ref={projectDarkenRef}></div>
-
-            <div className='projects-section-project-content' ref={projectContentRef}>
-                <h3 className='projects-section-project-title'>React-Todolist</h3>
-                <p className='projects-section-project-description'>An interactive to-do list App</p>
-
-                <div className='projects-section-project-technologies'>
-                    <p className='projects-section-project-technology'>React</p>
-                    <p className='projects-section-project-technology'>HTML</p>
-                    <p className='projects-section-project-technology'>CSS</p>
+        <Link to={`/projects/${projectKey}`}>
+            <div className='projects-section-project' ref={projectRef}>
+                <img 
+                    src={`/assets/project-images/${projectKey}/${project.images[0]}`}
+                    className='projects-section-project-image'
+                />
+    
+                <div className='projects-section-project-darken' ref={projectDarkenRef}></div>
+    
+                <div className='projects-section-project-content' ref={projectContentRef}>
+                    <h3 className='projects-section-project-title'>{project.title}</h3>
+                    <p className='projects-section-project-description'>{project.description}</p>
+    
+                    <div className='projects-section-project-technologies'>
+                        {project.technologies.map((item) => {
+                            return <p className='projects-section-project-technology'>{item}</p>
+                        })}
+                    </div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

@@ -8,10 +8,9 @@ const ProjectsSection = ({ sectionRef, projects }) => {
             <h2 className='section-title projects-section-title'>My Projects</h2>
 
             <div id='projects-section-projects-wrapper'>
-                <Project />
-                <Project />
-                <Project />
-                <Project />
+                {Object.keys(projects).map(key => {
+                    return <Project key={key} projectKey={key} project={projects[key]} />
+                })}
             </div>
         </section>
     );
