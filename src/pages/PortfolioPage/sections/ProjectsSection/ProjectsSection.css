@@ -27,3 +27,14 @@
 .projects-section-title::after {
     left: calc(-45px - 2vw);
 }
+
+#projects-section-projects-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: calc(25px + 4vw);
+}
