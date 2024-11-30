@@ -9,6 +9,14 @@ function App() {
 
   // Projects information used in portfolio and project pages
   const projects = {
+    "portfolio": {
+      title: "Portfolio Website",
+      description: "An up-to-date portfolio showcasing my skills and projects",
+      githubRepo: "https://github.com/CallumB04/callumb04.github.io",
+      liveWebsite: "https://callumb04.github.io",
+      technologies: ["React", "Javascript", "CSS"],
+      images: ["homepage.png"]
+    },
     "react-todolist": {
       title: "React Todolist",
       description: "An interactive to-do list App",
@@ -28,8 +36,8 @@ function App() {
     "old-portfolio": {
       title: "Old Portfolio",
       description: "My original portfolio website, and first project within web development",
-      githubRepo: "https://github.com/CallumB04/callumb04.github.io",
-      liveWebsite: "https://callumb04.github.io",
+      githubRepo: "https://github.com/CallumB04/old-portfolio",
+      liveWebsite: "https://callumb04.github.io/old-portfolio",
       technologies: ["HTML", "Javascript", "CSS"],
       images: ["portfolio-website.png"]
     },
