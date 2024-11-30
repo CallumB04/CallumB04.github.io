@@ -9,14 +9,54 @@ function App() {
 
   // Projects information used in portfolio and project pages
   const projects = {
-    "test-project": {
-      title: "project title",
-      description: "this is a project",
-      githubRepo: "https://github.com/callumb04/testtesttest",
-      websiteLink: "https://google.com",
-      technologies: ["Javascript", "HTML", "CSS"],
-      images: ["image1.png", "image2.png"]
-    }
+    "react-todolist": {
+      title: "React Todolist",
+      description: "an interactive To-do list App",
+      githubRepo: "https://github.com/CallumB04/React-Todolist",
+      liveWebsite: "",
+      technologies: ["React", "Javascript", "CSS"],
+      images: ["react-todolist.png"]
+    },
+    "russthetechguy": {
+      title: "russthetechguy.co.uk",
+      description: "a commercial website built for a computer repair technician business",
+      githubRepo: "https://github.com/CallumB04/russthetheguy.co.uk",
+      liveWebsite: "https://russthetechguy.co.uk",
+      technologies: ["HTML", "Javascript", "CSS"],
+      images: ["russthetechguy.png"]
+    },
+    "old-portfolio": {
+      title: "Old Portfolio",
+      description: "my original portfolio website, and first project within web development",
+      githubRepo: "https://github.com/CallumB04/callumb04.github.io",
+      liveWebsite: "https://callumb04.github.io",
+      technologies: ["HTML", "Javascript", "CSS"],
+      images: ["portfolio-website.png"]
+    },
+    "platform-shooter": {
+      title: "Platform Shoooter",
+      description: "an in-progress 2D platforming shooter game",
+      githubRepo: "https://github.com/CallumB04/Platform-Shooter",
+      liveWebsite: "",
+      technologies: ["C++", "SFML"],
+      images: ["platform-shooter.png"]
+    },
+    "auto-mate": {
+      title: "Auto-mate",
+      description: "a discord bot with many automation and moderation features",
+      githubRepo: "https://github.com/CallumB04/auto-mate",
+      liveWebsite: "",
+      technologies: ["Python", "discord.py"],
+      images: ["auto-mate.png"]
+    },
+    "snake-sfml": {
+      title: "Snake Game",
+      description: "a simple re-creation of the game snake",
+      githubRepo: "https://github.com/CallumB04/Snake-SFML",
+      liveWebsite: "",
+      technologies: ["C++", "SFML"],
+      images: ["snake.png"]
+    },
   };
 
   // holding window width in state to pass to child components
