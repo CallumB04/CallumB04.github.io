@@ -12,7 +12,7 @@ function App() {
     "react-todolist": {
       title: "React Todolist",
       description: "An interactive to-do list App",
-      githubRepo: "https://github.com/CallumB04/React-Todolist",
+      githubRepo: "https://github.com/CallumB04/react-todolist",
       liveWebsite: "",
       technologies: ["React", "Javascript", "CSS"],
       images: ["react-todolist.png"]
@@ -36,7 +36,7 @@ function App() {
     "platform-shooter": {
       title: "Platform Shooter",
       description: "An in-progress 2D platforming shooter game",
-      githubRepo: "https://github.com/CallumB04/Platform-Shooter",
+      githubRepo: "https://github.com/CallumB04/platform-shooter",
       liveWebsite: "",
       technologies: ["C++", "SFML"],
       images: ["platform-shooter.png"]
@@ -52,7 +52,7 @@ function App() {
     "snake-sfml": {
       title: "Snake Game",
       description: "A simple re-creation of the game snake",
-      githubRepo: "https://github.com/CallumB04/Snake-SFML",
+      githubRepo: "https://github.com/CallumB04/snake-sfml",
       liveWebsite: "",
       technologies: ["C++", "SFML"],
       images: ["snake.png"]
