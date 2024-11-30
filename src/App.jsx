@@ -54,7 +54,7 @@ function App() {
       description: "A discord bot with many automation and moderation features",
       githubRepo: "https://github.com/CallumB04/auto-mate",
       liveWebsite: "",
-      technologies: ["Python", "discord.py"],
+      technologies: ["Python", "discord.py", "Docker"],
       images: ["auto-mate.png"]
     },
     "snake-sfml": {
