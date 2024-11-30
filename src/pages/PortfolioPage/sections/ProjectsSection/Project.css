@@ -1,0 +1,23 @@
+.projects-section-project {
+    width: 42%;
+    min-width: 360px;
+    aspect-ratio: 1;
+    height: auto;
+
+    border: 1.5px solid var(--text-dark-color); 
+    border-radius: 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-section-project-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 101%;
+    height: 101%;
+    object-fit: cover;
+}
