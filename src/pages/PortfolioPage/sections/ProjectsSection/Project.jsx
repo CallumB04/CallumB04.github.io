@@ -13,7 +13,7 @@ const Project = () => {
         let content = projectContentRef.current;
 
         project.addEventListener("mouseover", () => {
-            background.style.opacity = "0.85";
+            background.style.opacity = "0.9";
             content.style.opacity = "1";
             content.style.transform = "translateY(0px)";
         });
