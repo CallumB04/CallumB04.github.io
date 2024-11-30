@@ -11,6 +11,10 @@
     overflow: hidden;
 }
 
+.projects-section-project:hover {
+    cursor: pointer;
+}
+
 .projects-section-project-image {
     display: block;
     position: absolute;
