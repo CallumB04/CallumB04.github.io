@@ -20,7 +20,7 @@ function App() {
     "russthetechguy": {
       title: "russthetechguy.co.uk",
       description: "A commercial website built for a computer repair technician business",
-      githubRepo: "https://github.com/CallumB04/russthetheguy.co.uk",
+      githubRepo: "https://github.com/CallumB04/russthetechguy.co.uk",
       liveWebsite: "https://russthetechguy.co.uk",
       technologies: ["HTML", "Javascript", "CSS"],
       images: ["russthetechguy.png"]
