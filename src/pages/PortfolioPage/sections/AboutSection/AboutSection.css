@@ -71,7 +71,7 @@
     font-size: calc(1.5rem + 0.9vw);
     left: calc(18% - 4px);
     
-    transition: font-size 100ms ease, left 300ms ease;
+    transition: font-size 100ms ease, left 300ms ease, color 300ms ease;
 }
 
 @keyframes fade-cv-btn-text {
