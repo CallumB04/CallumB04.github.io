@@ -11,7 +11,7 @@ function App() {
   const projects = {
     "react-todolist": {
       title: "React Todolist",
-      description: "an interactive To-do list App",
+      description: "An interactive to-do list App",
       githubRepo: "https://github.com/CallumB04/React-Todolist",
       liveWebsite: "",
       technologies: ["React", "Javascript", "CSS"],
@@ -19,7 +19,7 @@ function App() {
     },
     "russthetechguy": {
       title: "russthetechguy.co.uk",
-      description: "a commercial website built for a computer repair technician business",
+      description: "A commercial website built for a computer repair technician business",
       githubRepo: "https://github.com/CallumB04/russthetheguy.co.uk",
       liveWebsite: "https://russthetechguy.co.uk",
       technologies: ["HTML", "Javascript", "CSS"],
@@ -27,15 +27,15 @@ function App() {
     },
     "old-portfolio": {
       title: "Old Portfolio",
-      description: "my original portfolio website, and first project within web development",
+      description: "My original portfolio website, and first project within web development",
       githubRepo: "https://github.com/CallumB04/callumb04.github.io",
       liveWebsite: "https://callumb04.github.io",
       technologies: ["HTML", "Javascript", "CSS"],
       images: ["portfolio-website.png"]
     },
     "platform-shooter": {
-      title: "Platform Shoooter",
-      description: "an in-progress 2D platforming shooter game",
+      title: "Platform Shooter",
+      description: "An in-progress 2D platforming shooter game",
       githubRepo: "https://github.com/CallumB04/Platform-Shooter",
       liveWebsite: "",
       technologies: ["C++", "SFML"],
@@ -43,7 +43,7 @@ function App() {
     },
     "auto-mate": {
       title: "Auto-mate",
-      description: "a discord bot with many automation and moderation features",
+      description: "A discord bot with many automation and moderation features",
       githubRepo: "https://github.com/CallumB04/auto-mate",
       liveWebsite: "",
       technologies: ["Python", "discord.py"],
@@ -51,7 +51,7 @@ function App() {
     },
     "snake-sfml": {
       title: "Snake Game",
-      description: "a simple re-creation of the game snake",
+      description: "A simple re-creation of the game snake",
       githubRepo: "https://github.com/CallumB04/Snake-SFML",
       liveWebsite: "",
       technologies: ["C++", "SFML"],
