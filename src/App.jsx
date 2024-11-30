@@ -21,7 +21,7 @@ function App() {
       title: "React Todolist",
       description: "An interactive to-do list App",
       githubRepo: "https://github.com/CallumB04/react-todolist",
-      liveWebsite: "",
+      liveWebsite: "callumb04.github.io/react-todolist",
       technologies: ["React", "Javascript", "CSS"],
       images: ["react-todolist.png"]
     },
