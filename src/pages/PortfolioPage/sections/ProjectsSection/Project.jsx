@@ -28,7 +28,8 @@ const Project = ({ projectKey, project }) => {
     }, [])
 
     return (
-        <Link to={`/projects/${projectKey}`}>
+        // when built project pages: <Link to={`/projects/${projectKey}`}>
+        <Link to={project.githubRepo}>
             <div className='projects-section-project' ref={projectRef}>
                 <img 
                     src={`/assets/project-images/${projectKey}/${project.images[0]}`}
