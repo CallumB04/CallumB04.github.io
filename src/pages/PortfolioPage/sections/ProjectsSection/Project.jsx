@@ -44,7 +44,7 @@ const Project = ({ projectKey, project }) => {
     
                     <div className='projects-section-project-technologies'>
                         {project.technologies.map((item) => {
-                            return <p className='projects-section-project-technology'>{item}</p>
+                            return <p key={item} className='projects-section-project-technology'>{item}</p>
                         })}
                     </div>
                 </div>
