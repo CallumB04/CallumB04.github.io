@@ -9,7 +9,7 @@ const PortfolioPage = ({ projects, refs }) => {
         <main className='main'>
             <HomeSection sectionRefs={refs}/>
             <AboutSection sectionRef={refs.aboutSection}/>
-            <ProjectsSection sectionRef={refs.projectsSection}/>            
+            <ProjectsSection projects={projects} sectionRef={refs.projectsSection}/>            
         </main>
     );
 };
