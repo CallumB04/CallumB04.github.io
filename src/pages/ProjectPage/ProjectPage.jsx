@@ -13,9 +13,7 @@ const ProjectPage = ({ projects }) => {
         return (
         <>
             <Navbar />
-            <h2 className='project-not-found'>
-                Project not found
-            </h2>
+            <h2 className='project-not-found'>Project not found</h2>
         </>
         );
     }
@@ -23,8 +21,40 @@ const ProjectPage = ({ projects }) => {
     return (
         <>
             <Navbar />
-            <main className="main">
+            <main className="main project-page">
+                <section>
+                    <h1 className='project-page-title'>{project.title}</h1>
+                    
+                    <div className='project-page-links'>
+                        <a href={project.githubRepo} className='fab fa-github'></a>
+                        { /* displaying link to demo website if exists*/ }
+                        { project.liveWebsite ? <a href={project.liveWebsite} className='fa fa-link'></a> : "" }
+                    </div>
+
+                    <h2 className='project-page-subtitle'>Technologies</h2>
+                    <div className='project-page-technologies'>
+                        { project.allTechnologies.map((item) => {
+                            return <p key={item} className='project-page-technology'>{item}</p>
+                        }) }
+                    </div>
+
+                    <h2 className='project-page-subtitle'>About the Project</h2>
+                    { /* Currently shows description, add long about property to each project in object */ }
+                    <p className='project-page-about'>
+                        {project.description}
+                    </p>
+                </section>
+
+                <div id='project-page-section-divider'></div>
                 
+                <section>
+                    <h2 className='project-page-subtitle'>Project Images</h2>
+                    <div className='project-page-images'>
+                        { project.images.map((image) => {
+                            return <img key={image} src={`/assets/project-images/${projectName}/${image}`} className='project-page-image' />
+                        }) }
+                    </div>
+                </section>
             </main>
         </>
     );

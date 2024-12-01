@@ -4,3 +4,128 @@
     font-size: 2.6rem;
     font-family: "Source Sans Pro";
 }
+
+.project-page {
+    background: var(--background-light-color);
+    text-align: center;
+    font-family: "Source Sans Pro";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.project-page > section {
+    width: 50%;
+    min-width: 500px;
+}
+
+.project-page-title, .project-page-subtitle {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.project-page-title {
+    padding-top: 30px;
+    font-size: calc(2.1rem + 1.2vw);
+    letter-spacing: 2px;
+}
+
+.project-page-links {
+    width: max-content;
+    margin: 0 auto;
+    margin-top: calc(10px + 0.2vw);
+
+    background-color: #dcdcdc;
+    padding: calc(12px - 0.1vw) calc(17px - 0.15vw);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10);
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project-page-links > a {
+    color: inherit;
+    text-decoration: none;
+    font-size: calc(2rem - 0.45vw);
+    transition: scale 100ms ease, color 200ms ease;
+}
+
+.project-page-links > a:hover {
+    cursor: pointer;
+    color: var(--highlight-color);
+    scale: 1.05;
+}
+
+.project-page-subtitle {
+    letter-spacing: 1px;
+    font-size: calc(1.6rem + 0.7vw);
+    margin-top: 30px;
+}
+
+.project-page-technologies {
+    width: 75%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: calc(12px + 0.7vw);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(10px + 0.1vw);
+}
+
+.project-page-technology {
+    background: var(--navbar-color);
+    color: var(--text-dark-color);
+    letter-spacing: 1px;
+    font-family: Lato;
+    padding: 9px 17px;
+    border-radius: 30px;
+    user-select: none;
+    font-size: calc(0.95rem + 0.1vw);
+    font-weight: 600;
+}
+
+.project-page-about {
+    font-family: Lato;
+    margin: 0 auto;
+    margin-top: calc(12px + 0.1vw);
+    font-size: calc(0.95rem + 0.1vw);
+    width: 70%;
+    max-width: 65ch;
+}
+
+.project-page-images {
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.project-page-image {
+    max-width: 26%;
+    min-width: calc(380px - 3vw);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+#project-page-section-divider {
+    position: absolute;
+    width: 1px;
+    height: 84%;
+    background-color: var(--text-dark-color);
+    top: 8%;
+}
+
+@media (max-width: 1000px) {
+    #project-page-section-divider {
+        display: none;
+    }
+}
+
