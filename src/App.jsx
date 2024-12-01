@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
-import Navbar from './components/Navbar/Navbar';
 
 function App() {
 
@@ -90,10 +89,6 @@ function App() {
 
   return (
     <Router>
-      <Navbar 
-        windowWidth={windowWidth}
-        sections={{home: homeSection, about: aboutSection, projects: projectsSection}}
-      />
       <Routes>
         <Route 
           path="/" 
@@ -101,6 +96,7 @@ function App() {
             <PortfolioPage 
               projects={projects} 
               refs={{homeSection: homeSection, aboutSection: aboutSection, projectsSection: projectsSection}}
+              windowWidth={windowWidth}
             />} 
         />
         <Route

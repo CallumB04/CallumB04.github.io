@@ -2,15 +2,23 @@ import './PortfolioPage.css';
 import HomeSection from './sections/HomeSection/HomeSection';
 import AboutSection from './sections/AboutSection/AboutSection';
 import ProjectsSection from './sections/ProjectsSection/ProjectsSection';
+import Navbar from './Navbar/Navbar';
 
-const PortfolioPage = ({ projects, refs }) => {
+const PortfolioPage = ({ projects, refs, windowWidth }) => {
     
     return (
-        <main className='main'>
-            <HomeSection sectionRefs={refs}/>
-            <AboutSection sectionRef={refs.aboutSection}/>
-            <ProjectsSection projects={projects} sectionRef={refs.projectsSection}/>            
-        </main>
+        <>
+            <Navbar 
+                windowWidth={windowWidth}
+                sections={{home: refs.homeSection, about: refs.aboutSection, projects: refs.projectsSection}}
+            />
+
+            <main className='main'>
+                <HomeSection sectionRefs={refs}/>
+                <AboutSection sectionRef={refs.aboutSection}/>
+                <ProjectsSection projects={projects} sectionRef={refs.projectsSection}/>            
+            </main>
+        </>
     );
 };
 
