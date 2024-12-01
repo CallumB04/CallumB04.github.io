@@ -1,6 +1,7 @@
 import './ProjectPage.css';
 import React from "react";
 import { useParams } from "react-router-dom";
+import Navbar from './Navbar/Navbar';
 
 const ProjectPage = ({ projects }) => {
 
@@ -9,13 +10,21 @@ const ProjectPage = ({ projects }) => {
   
     // Displaying if user attemps to access non-existing project
     if (!project) {
-        return <h2>Project not found</h2>;
+        return (
+        <>
+            <Navbar />
+            <h2 className='project-not-found'>
+                Project not found
+            </h2>
+        </>
+        );
     }
   
     return (
-        <>
+        <main className="main">
+            <Navbar />
             
-        </>
+        </main>
     );
   };
 
