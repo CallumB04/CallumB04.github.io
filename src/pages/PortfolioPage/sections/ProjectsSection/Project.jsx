@@ -43,7 +43,7 @@ const Project = ({ projectKey, project }) => {
                     <p className='projects-section-project-description'>{project.description}</p>
     
                     <div className='projects-section-project-technologies'>
-                        {project.technologies.map((item) => {
+                        {project.mainTechnologies.map((item) => {
                             return <p key={item} className='projects-section-project-technology'>{item}</p>
                         })}
                     </div>

@@ -13,7 +13,8 @@ function App() {
       description: "An up-to-date portfolio showcasing my skills and projects",
       githubRepo: "https://github.com/CallumB04/callumb04.github.io",
       liveWebsite: "https://callumb04.github.io",
-      technologies: ["React", "Javascript", "CSS"],
+      mainTechnologies: ["React", "Javascript", "CSS"],
+      allTechnologies: ["React", "Javascript", "CSS"],
       images: ["homepage.png"]
     },
     "react-todolist": {
@@ -21,7 +22,8 @@ function App() {
       description: "An interactive to-do list App",
       githubRepo: "https://github.com/CallumB04/react-todolist",
       liveWebsite: "https://callumb04.github.io/react-todolist",
-      technologies: ["React", "Javascript", "CSS"],
+      mainTechnologies: ["React", "Javascript", "CSS"],
+      allTechnologies: ["React", "Javascript", "CSS"],
       images: ["react-todolist.png"]
     },
     "russthetechguy": {
@@ -29,7 +31,8 @@ function App() {
       description: "A commercial website built for a computer repair technician business",
       githubRepo: "https://github.com/CallumB04/russthetechguy.co.uk",
       liveWebsite: "https://russthetechguy.co.uk",
-      technologies: ["HTML", "Javascript", "CSS"],
+      mainTechnologies: ["HTML", "Javascript", "CSS"],
+      allTechnologies: ["HTML", "Javascript", "CSS"],
       images: ["russthetechguy.png"]
     },
     "old-portfolio": {
@@ -37,7 +40,8 @@ function App() {
       description: "My original portfolio website, and first project within web development",
       githubRepo: "https://github.com/CallumB04/old-portfolio",
       liveWebsite: "https://callumb04.github.io/old-portfolio",
-      technologies: ["HTML", "Javascript", "CSS"],
+      mainTechnologies: ["HTML", "Javascript", "CSS"],
+      allTechnologies: ["HTML", "Javascript", "CSS"],
       images: ["portfolio-website.png"]
     },
     "platform-shooter": {
@@ -45,7 +49,8 @@ function App() {
       description: "An in-progress 2D platforming shooter game",
       githubRepo: "https://github.com/CallumB04/platform-shooter",
       liveWebsite: "",
-      technologies: ["C++", "SFML"],
+      mainTechnologies: ["C++", "SFML"],
+      allTechnologies: ["C++", "SFML"],
       images: ["platform-shooter.png"]
     },
     "auto-mate": {
@@ -53,7 +58,8 @@ function App() {
       description: "A discord bot with many automation and moderation features",
       githubRepo: "https://github.com/CallumB04/auto-mate",
       liveWebsite: "",
-      technologies: ["Python", "discord.py", "Docker"],
+      mainTechnologies: ["Python", "discord.py", "Docker"],
+      allTechnologies: ["Python", "discord.py", "Docker"],
       images: ["auto-mate.png"]
     },
     "snake-sfml": {
@@ -61,7 +67,8 @@ function App() {
       description: "A simple re-creation of the game snake",
       githubRepo: "https://github.com/CallumB04/snake-sfml",
       liveWebsite: "",
-      technologies: ["C++", "SFML"],
+      mainTechnologies: ["C++", "SFML"],
+      allTechnologies: ["C++", "SFML"],
       images: ["snake.png"]
     },
   };
