@@ -1,0 +1,33 @@
+.project-navbar {
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: var(--navbar-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-navbar > * {
+    color: var(--text-dark-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+.project-navbar > a {
+    padding: 0 10px;
+}
+
+.fa-house-chimney {
+    font-size: calc(2rem + 0.3vw);
+}
+
+.project-navbar p {
+    font-size: 1rem;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+}
