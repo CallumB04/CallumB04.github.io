@@ -13,13 +13,18 @@
 }
 
 .project-navbar > * {
-    color: var(--text-dark-color);
     text-decoration: none;
     text-align: center;
 }
 
 .project-navbar > a {
+    color: var(--text-dark-color);
     padding: 0 10px;
+    transition: color 200ms ease;
+}
+
+.project-navbar > a:hover {
+    color: #222;
 }
 
 .fa-house-chimney {
