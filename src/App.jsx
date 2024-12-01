@@ -7,6 +7,13 @@ import ProjectPage from './pages/ProjectPage/ProjectPage';
 function App() {
 
   // Projects information used in portfolio and project pages
+  // title - project name
+  // description - short description about project
+  // githubRepo - link to repository
+  // liveWebsite - link to live demo ("" if none)
+  // mainTechnologies - 2-3 main technologies of project, on projects section of portfolio
+  // allTechnologies - everything used to make project, on project pages
+  // images - array of image files for project
   const projects = {
     "portfolio": {
       title: "Portfolio Website",
@@ -14,7 +21,7 @@ function App() {
       githubRepo: "https://github.com/CallumB04/callumb04.github.io",
       liveWebsite: "https://callumb04.github.io",
       mainTechnologies: ["React", "Javascript", "CSS"],
-      allTechnologies: ["React", "Javascript", "CSS"],
+      allTechnologies: ["React", "Javascript", "CSS", "HTML", "Vite", "Node.js"],
       images: ["homepage.png"]
     },
     "react-todolist": {
@@ -23,7 +30,7 @@ function App() {
       githubRepo: "https://github.com/CallumB04/react-todolist",
       liveWebsite: "https://callumb04.github.io/react-todolist",
       mainTechnologies: ["React", "Javascript", "CSS"],
-      allTechnologies: ["React", "Javascript", "CSS"],
+      allTechnologies: ["React", "Javascript", "CSS", "HTML", "Node.js"],
       images: ["react-todolist.png"]
     },
     "russthetechguy": {
@@ -58,7 +65,7 @@ function App() {
       description: "A discord bot with many automation and moderation features",
       githubRepo: "https://github.com/CallumB04/auto-mate",
       liveWebsite: "",
-      mainTechnologies: ["Python", "discord.py", "Docker"],
+      mainTechnologies: ["Python", "Docker"],
       allTechnologies: ["Python", "discord.py", "Docker"],
       images: ["auto-mate.png"]
     },
