@@ -1,6 +1,6 @@
 #projects-section {
     padding-bottom: 130px;
-    padding-top: 70px;
+    padding-top: 40px;
 }
 
 .projects-section-title {
@@ -31,7 +31,7 @@
 #projects-section-projects-wrapper {
     width: 95%;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 50px;
 
     display: flex;
     justify-content: space-evenly;
