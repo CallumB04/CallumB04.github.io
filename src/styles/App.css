@@ -1,1 +1,9 @@
 @import url("variables.css");
+
+.main {
+    position: absolute;
+    left: 0;
+    top: var(--navbar-height);
+    min-height: calc(100vh - var(--navbar-height));
+    width: 100%;
+}
