@@ -7,12 +7,12 @@
 
     /* Navigation bar */
     --navbar-color: #fdc24b;
-    --navbar-height: 80px;
+    --navbar-height: 70px;
     --navbar-highlighted-color: #eeeeee; /* highlights current section in navbar */
     --navbar-text-color: #0e0e0e;
     --navbar-text-hover-color: #2a2a2a;
     --navbar-text-font: Lato;
-    --navbar-text-size: calc(1.05rem + 0.2vw);
+    --navbar-text-size: calc(0.95rem + 0.25vw);
 
     /* Highlights */
     --highlight-color: #ffba2f; /* similar to navbar color, for small details throughout site */
