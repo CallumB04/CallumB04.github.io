@@ -21,10 +21,12 @@ const ProjectPage = ({ projects }) => {
     }
   
     return (
-        <main className="main">
+        <>
             <Navbar />
-            
-        </main>
+            <main className="main">
+                
+            </main>
+        </>
     );
   };
 
