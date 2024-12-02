@@ -26,9 +26,9 @@ const ProjectPage = ({ projects }) => {
                     <h1 className='project-page-title'>{project.title}</h1>
                     
                     <div className='project-page-links'>
-                        <a href={project.githubRepo} className='fab fa-github'></a>
+                        <a href={project.githubRepo} target='_blank' className='fab fa-github'></a>
                         { /* displaying link to demo website if exists*/ }
-                        { project.liveWebsite ? <a href={project.liveWebsite} className='fa fa-link'></a> : "" }
+                        { project.liveWebsite ? <a href={project.liveWebsite} target='_blank' className='fa fa-link'></a> : "" }
                     </div>
 
                     <h2 className='project-page-subtitle'>Technologies</h2>
