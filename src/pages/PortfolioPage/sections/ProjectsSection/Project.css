@@ -49,14 +49,14 @@
 }
 
 .projects-section-project-title {
-    font-size: calc(1.3rem + 0.6vw);
+    font-size: calc(1.75rem + 0.15vw);
     font-family: "Source Sans Pro";
     font-weight: 600;
     color: var(--highlight-color);
 }
 
 .projects-section-project-description {
-    font-size: calc(0.9rem + 0.25vw);
+    font-size: calc(1rem + 0.1vw);
     margin-top: 4px;
     font-family: Lato;
     max-width: 30ch;
@@ -77,5 +77,5 @@
     padding: 7px 14px;
     border-radius: 30px;
     user-select: none;
-    font-size: calc(0.8rem + 0.15vw);
+    font-size: calc(0.8rem + 0.1vw);
 }
