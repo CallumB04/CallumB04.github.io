@@ -41,7 +41,7 @@ const ProjectPage = ({ projects }) => {
                     <h2 className='project-page-subtitle'>About the Project</h2>
                     { /* Currently shows description, add long about property to each project in object */ }
                     <p className='project-page-about'>
-                        {project.description}
+                        {project.longAbout}
                     </p>
                 </section>
 
