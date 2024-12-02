@@ -51,8 +51,16 @@ const ProjectPage = ({ projects }) => {
                     <h2 className='project-page-subtitle'>Project Images</h2>
                     <div className='project-page-images'>
                         { project.images.map((image) => {
-                            return <img key={image} src={`/assets/project-images/${projectName}/${image}`} className='project-page-image' />
-                        }) }
+                            let imagePath = `/assets/project-images/${projectName}/${image}`;
+                            return (
+                                <a href={imagePath} target='_blank'>
+                                    <img 
+                                        key={image} 
+                                        src={`/assets/project-images/${projectName}/${image}`} 
+                                        className='project-page-image' 
+                                    />
+                                </a>
+                        )}) }
                     </div>
                 </section>
             </main>

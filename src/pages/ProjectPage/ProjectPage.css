@@ -115,6 +115,11 @@
     margin-top: 20px;
 }
 
+.project-page-images > a {
+    max-width: 26%;
+    min-width: calc(380px - 3vw);
+}
+
 .project-page-image {
     max-width: 26%;
     min-width: calc(380px - 3vw);
