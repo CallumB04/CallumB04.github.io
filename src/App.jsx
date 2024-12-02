@@ -49,7 +49,7 @@ function App() {
       images: ["react-todolist.png"]
     },
     "russthetechguy": {
-      title: "russthetechguy.co.uk",
+      title: "russthetechguy",
       description: "A commercial website built for a computer repair technician business",
       longAbout: `
         A commercial and professional website I built for a Computer Repair Technician business,
