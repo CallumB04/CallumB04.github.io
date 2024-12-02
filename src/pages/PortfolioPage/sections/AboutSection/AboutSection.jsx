@@ -19,6 +19,7 @@ const AboutSection = ({ sectionRef }) => {
     ];
     const skillsOther = [
         ["git", "git", "git"],
+        ["github", "github", "github"],
         ["linux", "linux", "linux"],
         ["docker", "docker", "docker"],
         ["sass", "sass", "sass"]
