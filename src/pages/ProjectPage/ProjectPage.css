@@ -62,7 +62,7 @@
 .project-page-subtitle {
     letter-spacing: 1px;
     font-size: calc(1.6rem + 0.7vw);
-    margin-top: 30px;
+    margin-top: calc(30px + 1.5vw);
 }
 
 .project-page-technologies {
