@@ -98,6 +98,7 @@
     max-width: 60ch;
     font-weight: 200;
     color: #1a1a1a;
+    line-height: calc(1.3rem + 0.2vw);
 }
 
 .project-page-about > a {
