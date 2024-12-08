@@ -16,8 +16,8 @@
     text-decoration: none;
     font-family: var(--navbar-text-font);
     font-size: var(--navbar-text-size);
-    font-weight: 800;
-    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
     padding: 10px 15px;
     user-select: none;
