@@ -62,7 +62,14 @@ const Navbar = ({ windowWidth, sections }) => {
 
     // function to scroll to given section
     const scrollToSection = (section) => {
-        section.current.scrollIntoView({ behavior: "smooth" })
+        if (section == sections.home) { 
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        } else {
+            section.current.scrollIntoView({ behavior: "smooth" })
+        }
     }
 
     return (
