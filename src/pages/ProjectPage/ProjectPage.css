@@ -65,6 +65,10 @@
     margin-top: calc(30px + 1.5vw);
 }
 
+.project-page-subtitle:last-of-type {
+    margin-top: 30px;
+}
+
 .project-page-technologies {
     width: 75%;
     max-width: 800px;
