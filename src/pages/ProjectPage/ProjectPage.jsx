@@ -53,7 +53,7 @@ const ProjectPage = ({ projects }) => {
                 <div id='project-page-section-divider'></div>
                 
                 <section>
-                    <h2 className='project-page-subtitle'>Project Images</h2>
+                    <h2 className='project-page-subtitle' id='project-images-subtitle'>Project Images</h2>
                     <div className='project-page-images'>
                         { project.images.map((image) => {
                             let imagePath = `/assets/project-images/${projectName}/${image}`;
