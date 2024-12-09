@@ -1,6 +1,6 @@
 #projects-section {
     padding-bottom: 130px;
-    padding-top: 40px;
+    padding-top: calc(40px + 1.5vw);
 }
 
 .projects-section-title {
