@@ -79,3 +79,18 @@
     user-select: none;
     font-size: calc(0.9rem + 0.05vw);
 }
+
+@media (min-width: 1500px) {
+    .projects-section-project-title {
+        font-size: calc(1.75rem + 0.5vw);
+    }
+    .projects-section-project-description {
+        font-size: calc(1rem + 0.2vw);
+        line-height: 1.5rem;
+        max-width: 35ch;
+    }
+    .projects-section-project-technology {
+        font-size: calc(0.9rem + 0.15vw);
+        padding: 7px 16px;
+    }
+}
