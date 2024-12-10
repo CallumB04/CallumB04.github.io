@@ -12,7 +12,8 @@ const AboutSection = ({ sectionRef }) => {
         ["html", "html", "html5"], 
         ["css", "css", "css3"],
         ["cpp", "c\+\+", "cplusplus"],
-        ["js", "javascript", "javascript"]];
+        ["js", "javascript", "javascript"],
+        ["ts", "typescript", "typescript"]];
     const skillsFworksAndLibs = [
         ["react", "react", "react"],
         ["sfml", "SFML.svg"]
