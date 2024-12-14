@@ -130,6 +130,7 @@
     font-family: "Source Sans Pro";
     text-transform: uppercase;
     font-weight: 800;
+    white-space: nowrap;
     letter-spacing: 1px;
     font-size: calc(0.7rem + 0.5vw);
     background-color: var(--navbar-color);
