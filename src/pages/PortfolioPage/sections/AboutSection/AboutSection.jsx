@@ -6,7 +6,7 @@ const AboutSection = ({ sectionRef }) => {
 
     // storing skills in 2D arrays, <skill, hover text, devicon class>
     // automatically maps to JSX in respective sections
-    // for non devicon icons, arrays with have length of 2 <skill/hover text, img url>
+    // for non devicon icons, arrays will have length of 2 <skill/hover text, img url>
     const skillsLanguages = [
         ["python", "python", "python"], 
         ["html", "html", "html5"], 
@@ -16,6 +16,7 @@ const AboutSection = ({ sectionRef }) => {
         ["ts", "typescript", "typescript"]];
     const skillsFworksAndLibs = [
         ["react", "react", "react"],
+        ["tailwind", "tailwind css", "tailwindcss"],
         ["sfml", "SFML.svg"]
     ];
     const skillsOther = [
