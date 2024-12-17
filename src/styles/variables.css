@@ -1,7 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
 
 /* Variables used throughout whole application */
 :root {
@@ -12,7 +11,7 @@
     --navbar-highlighted-color: #0e0e0e; /* highlights current section in navbar */
     --navbar-text-color: #0e0e0e;
     --navbar-text-hover-color: #2a2a2a;
-    --navbar-text-font: "Ropa Sans";
+    --navbar-text-font: "Source Sans Pro";
     --navbar-text-size: calc(1.15rem + 0.2vw);
 
     /* Highlights */
